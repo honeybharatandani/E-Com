@@ -1,0 +1,45 @@
+.home__image {
+  width: 100%;
+  mask-image: linear-gradient(to bottom, rgb(0, 0, 0, 1), rgb(1, 0, 1, 0));
+  z-index: -1;
+  margin-bottom: -250px;
+}
+
+.home {
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home__row {
+  display: flex;
+  z-index: 1;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 100%;
+  position: relative;
+  max-width: 1500px;
+  padding: 20px;
+  border-color: #fff;
+  margin: auto;
+  background-color: rgb(230, 231, 231);
+}
+
+h1 {
+  color: #000000;
+  font-style: italic;
+  margin-left: 600px;
+  margin-top: 70px;
+}
+
+h1:hover {
+  color: crimson;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.fa-amazon {
+  margin-left: 700px;
+  color: #141414;
+  font-size: 32px;
+}
