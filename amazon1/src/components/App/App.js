@@ -10,11 +10,9 @@ import { auth } from "../../firebase/firebase";
 import { useStateValue } from "../../StateProvider/StateProvider";
 
 function App() {
-  // context to store all data
   const [{user}, dispatch] = useStateValue();
 
-  // loading all data
-  useEffect(() => {   
+  useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((authUser) => {
       console.log("THE USER IS ", authUser);
       if (authUser) { //the user is logged in

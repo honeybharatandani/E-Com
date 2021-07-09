@@ -1,4 +1,5 @@
 import React from 'react';
+import add from '../../images/add.jpeg';
 import { useStateValue } from '../../StateProvider/StateProvider';
 import './Checkout.css';
 import CheckoutProduct from '../CheckoutProduct/CheckoutProduct';
@@ -10,7 +11,7 @@ function Checkout() {
     return (
         <div className="checkout">
             <div className="checkout__left">
-                <img className="checkout__ad" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6qHF_tOgruj1U7-SycSGakqp7rSJL6UAVFQ&usqp=CAU" alt="" />
+                <img className="checkout__ad" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6qHF_tOgruj1U7-SycSGakqp7rSJL6UAVFQ&usqp=CAU" alt={add} />
                 {basket?.length === 0 ? (  //if there is nothing in the basket
                     <div>       {/*then it will show this message  */}
                         <h2>Your Shopping Basket is empty</h2>

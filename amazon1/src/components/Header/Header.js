@@ -3,9 +3,7 @@ import './Header.css'
 import { useStateValue } from '../../StateProvider/StateProvider';
 import { Link, useHistory } from "react-router-dom";
 import { auth } from '../../firebase/firebase';
-
 function Header() {
-    // for context we used usestatevalue
     const [{ basket, user }, dispatch] = useStateValue();
     const history = useHistory();
     console.log(user)
@@ -13,7 +11,6 @@ function Header() {
     const login = () => {
         if (user) {
             auth.signOut();
-            // will not refresh the page
             history.push("./");
         }
     }

@@ -4,7 +4,6 @@ import "./Login.css"
 import { Link, useHistory } from "react-router-dom";
 
 function Login() {
-    // useHistory history will not get removed
     const history = useHistory();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -20,7 +19,6 @@ function Login() {
             .catch(error => alert(error.message))
     }
 
-    // if user dont have its amazon acc can create new one
     const register = e => {
         e.preventDefault(); //this stop the refresh
         auth

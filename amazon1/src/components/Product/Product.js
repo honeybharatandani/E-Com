@@ -21,7 +21,7 @@ function Product({ id, title, image, price, rating }) { //accessing props from t
     }
 
     return (
-
+     
         <div className="product">
 
             {/* displaying image of the product */}
@@ -53,6 +53,7 @@ function Product({ id, title, image, price, rating }) { //accessing props from t
                 <button className="basket" onClick={addToBasket}>Add to basket</button>
             </div>
         </div>
+        
     );
 }
 
